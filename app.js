@@ -25,6 +25,7 @@ app.use(cors());
 
 //assign routers
 app.use("/api/v1", router);
+router.use(require('./routes/skillDonorRoutes.js'))
 router.use(require('./routes/router.js'))
 
 app.listen(PORT, () => {
